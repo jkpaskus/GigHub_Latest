@@ -84,3 +84,4 @@ C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_L
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.csproj.GenerateResource.Cache
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.CreateGigTable.resources
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.OverrideConventionsForGigsAndGenres.resources
+C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.PopulateGenresTable.resources
