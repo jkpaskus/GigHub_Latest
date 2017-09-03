@@ -4,6 +4,8 @@ namespace GigHub_Latest.Controllers
 {
     using GigHub_Latest.Models;
     using GigHub_Latest.ViewModels;
+    using Microsoft.AspNet.Identity;
+    using System;
     using System.Linq;
 
     public class GigsController : Controller
@@ -14,14 +16,34 @@ namespace GigHub_Latest.Controllers
         {
             this._context = new ApplicationDbContext();
         }
-        // GET: Gigs
+        
+
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel
-                                {
-                                    Genres = this._context.Genres.ToList()
-                                };
+                {
+                    Genres = this._context.Genres.ToList()
+                };
             return View(viewModel);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(GigFormViewModel viewModel)
+        {
+            var gig = new Gig
+                          {
+                              ArtistId = this.User.Identity.GetUserId(),
+                              DateTime = DateTime.Parse(
+                                  string.Format("{0} {1}", viewModel.Date, viewModel.Time)),
+                              GenreId = viewModel.Genre,
+                              Venue = viewModel.Venue
+                          };
+            this._context.Gigs.Add(gig);
+            this._context.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }
