@@ -5,7 +5,6 @@ namespace GigHub_Latest.Controllers
     using GigHub_Latest.Models;
     using GigHub_Latest.ViewModels;
     using Microsoft.AspNet.Identity;
-    using System;
     using System.Linq;
 
     public class GigsController : Controller
@@ -30,6 +29,7 @@ namespace GigHub_Latest.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
