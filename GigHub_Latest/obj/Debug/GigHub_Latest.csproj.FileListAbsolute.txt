@@ -87,3 +87,4 @@ C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_L
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.PopulateGenresTable.resources
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.AddForeignKeyPropertiesToGig.resources
 C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.AddForeignKeyPropertiesToGig1.resources
+C:\Users\HP\Desktop\Visual Studio\GigHub_Latest\GigHub_Latest\obj\Debug\GigHub_Latest.Migrations.AddNameToApplicationUser.resources
